@@ -17,7 +17,10 @@ class Users extends Component {
 	}
 }
 
+const mapStateToProps = state => {
+	return { users: state.users, usersLength: state.users.length };
+};
 //add mapStateToProps here
 
 // connect this component to Redux
-export default Users
+export default connect(mapStateToProps)(Users);
