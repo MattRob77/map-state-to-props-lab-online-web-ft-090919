@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App'
-import { component } 
+import { createStore }  from 'redux'
 
 import manageUsers from './reducers/manageUsers'
 
